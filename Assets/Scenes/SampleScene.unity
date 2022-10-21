@@ -10811,7 +10811,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _enemyPrefab: {fileID: 660768619092585765, guid: ab98672a6ac6c4146a59a0ba3d8d33f1, type: 3}
-  _spawnPeriod: 1
+  _spawnPeriod: 0.5
   _spawns:
   - {fileID: 1490368766}
   - {fileID: 1736462862}
