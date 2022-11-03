@@ -24,7 +24,6 @@ public class Controller : MonoBehaviour
 
     private void Start()
     {
-        //Application.targetFrameRate = 60;
         _frameImage.enabled = false;
         _objectsFind = FindObjectOfType<ObjectsFind>();
     }

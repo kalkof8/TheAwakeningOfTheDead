@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class SelectableObject : MonoBehaviour
@@ -29,7 +27,6 @@ public class SelectableObject : MonoBehaviour
         {
             SelectableIndicator.SetActive(false);
         }
-        
     }
     public virtual void WhenClickOnGround(Vector3 point)
     {

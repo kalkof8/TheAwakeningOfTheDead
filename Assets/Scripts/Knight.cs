@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
@@ -15,21 +13,15 @@ public class Knight : Unit
 {
     [SerializeField] private KnightState _currentUnitState;
     [SerializeField] private Animator _animator;
-
     [SerializeField] private Vector3 _targetPoint;
     [SerializeField] private Enemy _targetEnemy;
-    
     [SerializeField] private float _distanceToAttack = 1f;
     [SerializeField] private float _distanceToFollow = 7f;
-
-
     [SerializeField] private float _attackPeriod = 1f;
 
-    
     private ObjectsFind _objectsFind;
     private float _timer;
    
-
     public override void Start()
     {
         base.Start();

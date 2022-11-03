@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -82,14 +81,6 @@ public class BuildingPlacer : MonoBehaviour
             Debug.Log(item);
         }
     }
-
-    //public void RemoveBuilding(Building building)
-    //{
-    //    for (int i = 0; i < _buildingsDictionary.Count; i++)
-    //    {
-    //        _buildingsDictionary.
-    //    }
-    //}
 
     public void CreatBuilding(GameObject buildingPrefab)
     {

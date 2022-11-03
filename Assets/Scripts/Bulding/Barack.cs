@@ -18,9 +18,6 @@ public class Barack : Building
 
     public void BuyKnigth(GameObject unitPrefab)
     {
-        //Vector3 spawnPosition = _spawn.position + new Vector3(Random.Range(-0.1f, 0.1f), 0, Random.Range(-0.1f, 0.1f));
-        //Instantiate(unitPrefab, spawnPosition, _spawn.rotation);
-
         GameObject newUnit = Instantiate(unitPrefab, _spawn.position, _spawn.rotation);
         _objectsFind.AllUnits.Add(newUnit.GetComponent<Unit>());
         Vector3 position = _spawn.position + new Vector3(Random.Range(-2f, 2f), 0f, Random.Range(-2f, 2f));

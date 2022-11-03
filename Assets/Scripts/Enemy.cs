@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.AI;
@@ -149,8 +147,6 @@ public class Enemy : MonoBehaviour
 
     public void FindNearestBuilding()
     {
-        //Building[] allBuildings = FindObjectsOfType<Building>();
-
         float minDistance = Mathf.Infinity;
         Building nearestBuilding = null;
 
@@ -163,24 +159,11 @@ public class Enemy : MonoBehaviour
                 nearestBuilding = _objectsFind.AllBuildings[i];
             }
         }
-        //for (int i = 0; i < allBuildings.Length; i++)
-        //{
-        //    float distance = Vector3.Distance(transform.position, allBuildings[i].transform.position);
-        //    if (distance <= minDistance)
-        //    {
-        //        minDistance = distance;
-        //        nearestBuilding = allBuildings[i];
-        //    }
-        //}
-
         _targetBuilding = nearestBuilding;
-
     }
 
     public void FindNearestUnit()
     {
-        //Unit[] allUnits = FindObjectsOfType<Unit>();
-
         float minDistance = Mathf.Infinity;
         Unit nearestUnit = null;
 
@@ -193,15 +176,7 @@ public class Enemy : MonoBehaviour
                 nearestUnit = _objectsFind.AllUnits[i];
             }
         }
-        //for (int i = 0; i < allUnits.Length; i++)
-        //{
-        //    float distance = Vector3.Distance(transform.position, allUnits[i].transform.position);
-        //    if (distance <= minDistance)
-        //    {
-        //        minDistance = distance;
-        //        nearestUnit = allUnits[i];
-        //    }
-        //}
+       
         _targetUnit = nearestUnit;
 
         if (minDistance < _distanceToFollow)
